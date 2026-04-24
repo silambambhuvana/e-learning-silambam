@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Django media (VERY IMPORTANT)
+backend/media/
+
+# Database (optional)
+backend/db.sqlite3
+
+# Node
+node_modules/
+
+# Vite build
+dist/
