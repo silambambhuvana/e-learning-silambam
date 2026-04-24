@@ -1,0 +1,232 @@
+body{ 
+    margin:0; 
+    padding:0; 
+    background:linear-gradient(135deg,#f4f7fb,#e8f0ff);
+} 
+#root { 
+    width: 100%; } 
+body,html{ 
+    overflow-x:hidden; 
+} 
+section{
+scroll-margin-top:80px;
+}
+.navbar{
+background:white !important;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+.navbar-logo{
+height:65px;
+width:65px;
+object-fit:contain;
+margin-right:10px;
+}
+
+.academy-text{
+display:flex;
+flex-direction:column;
+line-height:1.1;
+}
+
+.academy-title{
+font-size:20px;
+font-weight:700;
+}
+
+.academy-subtitle{
+font-size:14px;
+color:#444;
+}
+.navbar-brand{
+font-weight:bold;
+}
+
+.nav-link{
+color:#333 !important;
+font-weight:500;
+}
+
+.nav-link:hover{
+color:#1E3A8A !important;
+}
+
+.hero-section{
+width:100%;
+min-height:100vh;
+padding-left: 30px;
+background:linear-gradient(135deg,#f4f7fb,#e8f0ff);
+display:flex;
+align-items:center;
+}
+
+.hero-text h1{
+font-size:52px;
+font-weight:700;
+color:#2b4a8b;
+line-height:1.2;
+}
+
+.hero-text p{
+max-width:500px;
+font-size:18px;
+color:#555;
+margin-top:15px;
+}
+
+.hero-btn{
+padding:12px 30px;
+font-size:18px;
+border-radius:8px;
+}
+
+.hero-image{
+width:100%;
+max-width:600px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-10px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+.level-card{ 
+    border: none; 
+    transition:0.3s; 
+} 
+.level-card:hover{ 
+    transform:translateY(-10px); 
+} 
+.feature-box{ 
+    border-radius:10px; 
+    background:white; 
+    transition:0.3s; 
+} 
+.feature-box:hover{ 
+    transform:translateY(-8px); 
+} 
+.instructor-card{ 
+    border:none; 
+} 
+.instructor-img{ 
+    width:120px; 
+    height:120px; 
+    border-radius:50%; 
+    object-fit:cover; 
+    margin:auto; 
+} 
+
+.instructor-container {
+  overflow-x: hidden; /* 🔥 hide scroll */
+  width: 100%;
+  cursor: grab;
+}
+
+/* FLEX ROW */
+.instructor-scroll {
+  display: flex;
+  gap: 20px;
+}
+
+/* CARD SIZE */
+.instructor-card-wrapper {
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+}
+
+/* SMOOTH TOUCH */
+.instructor-container {
+  -webkit-overflow-scrolling: touch;
+}
+.gallery-img{ 
+    border-radius:10px; 
+    transition:0.3s; 
+    cursor:pointer; 
+} 
+.gallery-img:hover{ 
+    transform:scale(1.05); 
+} 
+
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.py-5{
+    background:linear-gradient(135deg,#f4f7fb,#e8f0ff);
+}
+/* TRAINING SLIDER */
+
+.training-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.training-track {
+  display: flex;
+  width: calc(250px * 12);
+  animation: scrollSlider 25s linear infinite;
+}
+
+.training-card {
+  width: 250px;
+  height: 280px;
+  margin: 15px 15px;
+  background: #fff;
+  border: 2px solid   #0d43da; 
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+   box-shadow: 0 5px 15px rgb(59, 56, 48); 
+  transition: 0.3s;
+}
+
+.training-card:hover {
+  transform: translateY(-8px) scale(1.05);
+ box-shadow: 0 5px 35px  #0d43da; 
+
+}
+
+.training-card img {
+  width: 100%;
+  height: 78%;
+  object-fit: cover;
+}
+
+.training-card h5 {
+  margin:  0px 20px;
+  text-align:center;
+  padding: 10px;
+  color: #1E3A8A;
+  font-weight: 600;
+}
+.clickable-card {
+  cursor: pointer;
+}
+
+.clickable-card:active {
+  transform: scale(0.97);
+}
+
+/* Animation */
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.training-slider:hover .training-track {
+  animation-play-state: paused;
+}

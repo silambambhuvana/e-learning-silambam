@@ -1,0 +1,42 @@
+.footer{
+background:linear-gradient(90deg,#0d47a1,#1976d2);
+color:white;
+padding:30px 0;
+margin-top:60px;
+}
+
+.academy-name{
+padding-top: 15px;
+font-weight:bold;
+margin-top:10px;
+}
+.contact-link{
+color:white;
+text-decoration:none;
+margin-left:5px;
+}
+
+.contact-link:hover{
+text-decoration:underline;
+color:#ffd54f;
+}
+.para-contact{
+    font-size: 18px;
+}
+
+.footer-icons{
+margin-bottom:10px;
+padding-top: 20px;
+}
+
+.footer-icons a{
+color:white;
+margin:0 10px;
+font-size:20px;
+}
+
+.copyright{
+font-size:15px;
+opacity:0.8;
+text-decoration: underline;
+}

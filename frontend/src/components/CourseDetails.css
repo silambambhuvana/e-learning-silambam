@@ -1,0 +1,120 @@
+
+/* CARD STYLE (same theme) */
+.upload-card{
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+.input {
+ width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+}
+.primary-btn {
+  background: #2b4a8b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* MAIN LAYOUT */
+.course-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 25px;
+  padding: 40px;
+}
+
+/* LEFT */
+.left-panel {
+  width: 100%;
+}
+
+/* RIGHT */
+.right-panel {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+/* VIDEO CARD */
+.video-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* VIDEO */
+.video-card h4 {
+  margin-bottom: 10px;
+}
+.video-card video {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* SUBMISSION */
+.submission-box {
+  border: 1px solid #eee;
+  padding: 12px;
+  margin-top: 12px;
+  aspect-ratio: 16 / 9; 
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FEEDBACK */
+.feedback {
+  color: green;
+  margin-top: 5px;
+}
+
+/* INFO BOX */
+.info-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+.video-card:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}

@@ -1,0 +1,74 @@
+.ip-container {
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ip-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* FORM CARD */
+.ip-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+.ip-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* IMAGE SECTION */
+.ip-image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ip-avatar {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2b4a8b;
+  margin-bottom: 10px;
+}
+
+/* CUSTOM BUTTON (instead of ugly file input) */
+.upload-btn {
+  background: #2b4a8b;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.upload-btn:hover {
+  background: #1f3564;
+}
+
+/* BUTTON */
+.primary-btn {
+  background: #2b4a8b;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  background: #1f3564;
+}

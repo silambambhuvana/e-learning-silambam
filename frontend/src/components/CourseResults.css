@@ -1,0 +1,75 @@
+/* MAIN */
+.cr-container {
+  padding: 40px;
+}
+
+.cr-title {
+  margin-bottom: 20px;
+}
+
+.cr-empty {
+  color: #777;
+}
+
+/* TABLE WRAPPER */
+.cr-table-wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+/* TABLE */
+.cr-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;   /* outer border */
+}
+
+/* HEADER */
+.cr-table thead {
+  background: #2b4a8b;
+  color: white;
+}
+
+.cr-table th {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;   /* column lines */
+}
+
+/* BODY */
+.cr-table td {
+  padding: 12px;
+  border: 1px solid #ddd;   /* 🔥 full grid lines */
+}
+
+/* ROW HOVER */
+.cr-table tbody tr:hover {
+  background: #f5f7fb;
+}
+
+/* STATUS */
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.pass {
+  background: #e6f4ea;
+  color: green;
+}
+
+.status.fail {
+  background: #fdecea;
+  color: red;
+}
+
+/* RETAKE */
+.retake-ok {
+  color: green;
+  font-weight: 500;
+}

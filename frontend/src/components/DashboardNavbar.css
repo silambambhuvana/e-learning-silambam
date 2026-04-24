@@ -1,0 +1,116 @@
+/* NAVBAR */
+.dash-navbar {
+  height: 90px;
+  background: white;
+  display: flex;
+  justify-content: center;  /* center logo */
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+/* LOGO CENTER */
+.dash-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dash-logo img {
+  height: 75px;
+  width: 75px;
+}
+
+.dash-logo h5 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.dash-logo span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* LEFT MENU */
+.menu-icon.left {
+  position: absolute;
+  left: 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* RIGHT LOGOUT ICON */
+.logout-icon {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  color: #2b4a8b;
+  transition: 0.3s;
+}
+
+.logout-icon:hover {
+  transform: scale(1.2);
+  color: #1e3a8a;
+}
+/* SIDE DRAWER */
+.side-drawer {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 1100;
+}
+
+.side-drawer.open {
+  left: 0;
+}
+
+/* CLOSE */
+.close-btn {
+  font-size: 22px;
+  text-align: right;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* MENU BUTTONS */
+.side-drawer button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  background: #f4f7fb;
+  border-radius: 8px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.side-drawer button:hover {
+  background: #e0e7ff;
+}
+
+/* LOGOUT */
+.logout {
+  background: #2b4a8b !important;
+  color: white !important;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1050;
+}

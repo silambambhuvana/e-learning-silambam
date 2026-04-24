@@ -1,0 +1,183 @@
+/* Container */
+.public-course-container {
+  width: 100%;
+  max-width: 1400px;   /* 🔥 wider */
+  padding: 20px 10px;  /* 🔥 less side space */
+  margin: auto; 
+ 
+}
+
+/* Card Layout */
+.public-course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Hover Effect */
+.public-course-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* Alternate LEFT-RIGHT */
+.public-course-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image */
+.public-course-image-box {
+  width: 55%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Overlay effect */
+.public-course-image-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.35), transparent);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.public-course-image-box:hover::after {
+  opacity: 1;
+}
+
+.public-course-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Image hover zoom */
+.public-course-image-box:hover img {
+  transform: scale(1.08);
+}
+
+/* Content */
+.public-course-content {
+  width: 45%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* LEFT SIDE TEXT */
+.public-course-card:not(.reverse) .public-course-content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+/* Title */
+.public-course-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+/* Description */
+.public-course-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+/* 🔥 Enroll Text (important highlight) */
+.enroll-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b4a8b;
+  background: rgba(106, 17, 203, 0.08);
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Smooth animation */
+.public-course-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.public-course-card:nth-child(2) { animation-delay: 0.1s; }
+.public-course-card:nth-child(3) { animation-delay: 0.2s; }
+.public-course-card:nth-child(4) { animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 🔍 Search Bar */
+.search-bar {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #2b4a8b;
+  box-shadow: 0 0 8px #2b4a8b;
+}
+/* Clickable effect */
+.clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clickable:hover {
+  background-color: #2b4a8b;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .public-course-card {
+    flex-direction: column !important;
+  }
+
+  .public-course-image-box,
+  .public-course-content {
+    width: 100%;
+  }
+
+  .public-course-content {
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+  }
+}

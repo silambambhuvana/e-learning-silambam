@@ -1,0 +1,61 @@
+.profile-page {
+  background: #f4f7fb;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* HERO */
+.profile-hero {
+  height: 220px;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-hero h1 {
+  font-weight: 700;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  background: white;
+  width: 400px;
+  margin: -80px auto 30px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+}
+
+.profile-img {
+  width: 170px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: -80px;
+  border: 5px solid white;
+}
+
+/* SECTION */
+.profile-section {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+.profile-section h4 {
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+/* DETAILS GRID */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

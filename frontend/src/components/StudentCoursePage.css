@@ -1,0 +1,81 @@
+/* MAIN LAYOUT */
+.yt-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* LEFT SIDE */
+.yt-player {
+  width: 100%;
+}
+
+/* VIDEO */
+.video-player {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  background: black;
+}
+
+/* RIGHT SIDE */
+.yt-sidebar {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* VIDEO ITEM */
+.yt-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yt-item:hover {
+  background: #f5f7fb;
+}
+
+/* TITLE */
+.yt-title {
+  font-size: 14px;
+}
+
+/* LOCKED */
+.locked {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* STATUS */
+.done {
+  color: green;
+}
+
+.lock {
+  color: red;
+}
+
+/* PROGRESS */
+.progress-box {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2b4a8b;
+  border-radius: 10px;
+}

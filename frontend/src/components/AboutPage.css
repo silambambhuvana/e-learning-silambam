@@ -1,0 +1,68 @@
+body{ 
+    margin:0; 
+    padding:0; 
+} 
+#root { 
+    width: 100%; 
+} 
+.about-page{
+padding-top:40px;
+}
+.navbar{
+    background:linear-gradient(90deg,#0d47a1,#1976d2);
+}
+
+.stats-row{
+margin-top:40px;
+}
+
+.stat-card{
+background:#f1f5ff;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat-card h3{
+color:#0d47a1;
+font-weight:bold;
+}
+
+.founder-list{
+margin-top:20px;
+}
+
+.timeline-row{
+margin-top:30px;
+}
+
+.timeline-card{
+background:#f1f5ff;
+padding:20px;
+text-align:center;
+border-radius:8px;
+}
+
+.timeline-card h4{
+color:#0d47a1;
+}
+
+.gallery-row{
+margin-top:20px;
+}
+
+.gallery-img{
+width:100%;
+border-radius:8px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.gallery-img:hover{
+transform:scale(1.05);
+}
+
+.container-fluid{ 
+    padding-left:10px ; 
+    padding-right:10px; 
+}
